@@ -1,0 +1,465 @@
+/*Спецификация*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/*Меню*/
+
+.menu-bar {
+    background: #fff;
+    color: #212121;
+    padding: 20px 0 20px 0;
+}
+
+.menu__item {
+    margin-left: 37px;
+}
+
+.menu__item a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    color: olive;
+}
+
+/*Шапка*/
+
+.header {
+    padding: 180px 0;
+    background-image: url(../img/display.png);
+    background-size: cover;
+    background-position: 0 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.header__title {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.header__text {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.3s;
+    background: #00897b;
+    border: 2px solid #00897b;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+/*Первый экран*/
+
+.about {
+    padding: 120px 0;
+    text-align: center;
+    color: #212121;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about__text {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 110px;
+}
+
+.about__h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+}
+
+.icon {
+    margin-bottom: 30px;
+}
+
+/*Второй экран*/
+
+.services {
+    background: #e4fdf9;
+    padding: 165px 0 125px 0;
+    text-align: center;
+    color: #212121;
+}
+
+.our_card {
+    background: #fff;
+    padding: 50px 40px 40px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+} 
+
+.our_card:hover {
+    background: #00897b;
+    color: #fff;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover .icon {
+    color: #fff;
+}
+
+.our_card:hover .button-services {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.icon {
+    transition: 0.5s;
+    font-size: 60px;
+    color: #212121;
+}
+
+.button-services {
+    transition: 0.5s;
+    color: #000;
+    text-transform: uppercase;
+    border: 1.5px solid #000;
+    background: transparent;
+    padding: 10px 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button-services:hover {
+    cursor: pointer;
+}
+
+/*Третий экран*/
+
+.portfolio {
+    padding: 120px 0 135px;
+    text-align: center;
+}
+
+.portfolio button:hover, 
+.focused {
+    color: #000;
+    border: 2px solid #000;
+    background: #fff;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
+}
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+.text {
+    display: none;
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+/*Четвертый экран*/
+
+.pricing {
+    padding: 120px 0;
+    text-align: center;
+    color: #212121;
+    background: #f0f1f1;
+}
+
+.price {
+    background: #fff;
+    transition: 0.5s;
+}
+
+.price:hover {
+    box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price__head {
+    color: #fff;
+    background-image: url(../img/pricing-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 210px;
+    padding: 50px 0 65px;
+}
+
+.price__head {
+    font-size: 50px;
+}
+
+.price__head sup {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.price__head sub {
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.price__head p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.price__body {
+    font-size: 17px;
+    color: #212121;
+
+}
+
+.price__body ul li {
+    padding-top: 28px;
+    padding-bottom: 17px;
+    max-width: 175px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.price__footer {
+    padding: 60px 0;
+}
+
+.price__footer button {
+    border: 1.5px solid #212121;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+    text-transform: uppercase;
+    transition: 0.5s;
+    width: 180px;
+    height: 60px;
+}
+
+.price__footer button:hover {
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: #00897b;
+}
+
+/*Шестой экран*/
+
+.team {
+    padding: 120px 0;
+    text-align: center;
+    color: #212121;
+    background: #fff;
+}
+
+.team h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.team p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a i {
+    transition: 0.5s;
+}
+
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+}
+
+.img {
+    padding-top: 135px;
+}
+
+/*Шестой экран*/
+
+.left > div:first-child {
+    order: 1;
+}
+
+.left > div:last-child {
+    order: 2;
+}
+
+.right > div:first-child {
+    order: 2;
+}
+
+.right > div:last-child {
+    order: 1;
+}
+
+.blog {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.blog div {
+    margin-top: 15px;
+}
+
+.blog a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.blog a:hover {
+    color: #00897b;
+    cursor: pointer;
+}
+
+.blog span {
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.blog i {
+    margin-right: 15px;
+}
+
+.blog p {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.button_blog {
+    width: 220px;
+    height: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    background: #00897b;
+    margin-top: 130px;
+    border: none;
+}
+
+/*Контакты*/
+
+.footer {
+    background-image: url(../img/contact.png);
+    padding: 165px 120px;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope {
+    font-size: 62px;
+    color: #fff;
+}
+
+.circle {
+    background: #3949ab;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 35px;
+}
+
+.circle + p {
+    font-size: 20px;
+}
+
+.footer input, .footer textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    border: none;
+}
+
+.footer input:focus, .footer textarea:focus {
+    outline: none;
+}
+
+.footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.footer button {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #212121;
+    padding: 20px 80px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.footer button:hover {
+    opacity: 0.6;
+}
+
+.form {
+    margin-top: 70px;
+}
+
+.rules {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
